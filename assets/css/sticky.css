@@ -1,0 +1,21 @@
+.slicky-navbar {
+  background: white !important;
+  transition: top 0.5s linear;
+  padding: 0 !important;
+  top: -100px;
+}
+.slicky-navbar .menu-item a {
+  color: #47a491 !important;
+}
+.slicky-navbar .menu-item a:hover {
+  color: #285d52 !important;
+}
+.slicky-navbar .navbar-brand img {
+  filter: brightness(100%) grayscale(0%) !important;
+}
+.slicky-navbar .redes-sociais span a {
+  color: #47a491 !important;
+}
+.slicky-navbar .redes-sociais span a:hover {
+  color: #285d52 !important;
+}

@@ -1,0 +1,55 @@
+.corpo-clinico{
+    padding: 2em 0 1em 0;
+    .clinico{
+        margin: 1em 0;
+    }
+    .titulo{
+        color: $verde
+        ;
+        text-align: center;
+    }
+    .img-clinico{
+        display: flex;
+        justify-content: center;
+        img{
+            box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.16);
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 150px;
+            border: 10px solid transparent;
+            max-width: 255px;
+            max-height: 255px;
+            width: 100%;
+            height: 100%;
+            &:hover{
+                border:10px solid $verde
+                ;
+            }
+        }
+    }
+    .id-clinico{
+        color: $verde
+        ;
+        text-align: center;
+        h5{
+            font-family: Oswald Bold;
+            font-size: 20px;
+        }
+        h6{
+            font-family: Oswald Light;
+            font-size: 16px;
+        }
+    }
+    #conheca_clinicos{
+        color: $verde
+        ;
+        font-size: 24px;
+        &:hover{
+            color: darken($verde
+            ,20%);
+        }
+    }
+}
+.corpo-clinico-page{
+    padding: 1em 0 300px 0;
+}

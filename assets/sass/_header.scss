@@ -1,0 +1,107 @@
+header{
+    position: relative;
+    .barra-navegacao{
+        position: absolute;
+        width: 100%;
+        @media (max-width: 992px) {
+            .container {
+              width: 100%;
+              max-width: none;
+            }
+        }
+        background: $verde;
+        z-index: 1;      
+        .navbar-brand{
+            img{
+                width: 18vw;
+                min-width: 125px;
+                filter: brightness(500%) grayscale(200%);
+                @media (max-width: 768px) {
+                    width: 30vw;
+                }
+            }
+            
+        }
+        .navbar-toggler{
+            background: transparent !important;
+        }            
+        .redes-sociais{
+            font-size: 25px;
+            a{
+                color: $branco;
+                &:hover{
+                    color: darken($branco,20%);
+                }
+            }
+
+        }
+        .desktop-lg{
+            @media(max-width: 992px){
+                display: none;
+            }
+        }
+    }
+    .mae-menu{
+        justify-content: center;
+        ul{
+            justify-content: center;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                text-align: center;
+                a{
+                    text-align: center;
+                    text-decoration: none;
+                    padding-right: .5rem !important;
+                    padding-left: .5rem !important;
+                    color: #fff !important;
+                    font-size:20px;
+                   
+                }
+                &:hover{
+                    a{
+                        color: darken(#fff,20%) !important;
+                    }
+                    
+                }
+            }
+        }
+        .current-menu-item{
+            a{
+                color: darken(#fff,20%) !important;
+            }
+        }
+        @media(max-width: 768px){
+            ul{
+                flex-direction: column;
+            }
+        }
+    }
+    
+    header{
+        position: fixed; /* fixa a div na tela, ou absolute caso tenha mais conteúdo */
+        top: 0;
+        left: 0;
+        z-index: 0; /* cabada abaixo do elemento .media */
+        width: 100%;
+        height: 100%;
+        .slide{
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            z-index: 1; /* camada acima da div cover */
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%); /* aqui está o segredo */
+        }
+    }
+//     .imagem-fundo{
+//         position: relative;
+//         z-index: 0;
+//         top: -5vw;
+//     }
+//     background: url() no-repeat center center;
+//     background-size: cover;
+} 

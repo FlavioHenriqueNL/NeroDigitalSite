@@ -1,0 +1,53 @@
+/* ===== SERVIÇOS ===== */
+.servicos{
+    .titulo{
+        color: $verde;
+        padding: 0 0 2em 0;
+        text-align: center;
+        a{
+            h2{
+                color: $verde;
+                &:hover{
+                    color: darken($verde,20%);
+                }
+            }
+        }
+        
+    }
+    .linha-vertical {
+        height: 80%;/*Altura da linha*/
+        border-right: 15px solid #000;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+        position: absolute;
+        right: 8.5%;
+        top: 8.5%;
+        @media(max-width: 1200px){
+            right: 2.5%; 
+        }
+    }
+    .lista-servicos{
+        h2{
+            color: $verde !important;
+            font-size: 40px;
+            font-family: Oswald Bold;
+            padding-bottom: 0.5em;
+        }
+            
+        li{
+            font-size: 21px;
+            color: #919191 !important;
+        }   
+    }
+    @media (max-width: 992px){
+        .lista-servicos{
+            h2{
+                font-size: 30px;
+            }
+            li{
+                font-size: 18px;
+            }
+        }
+    }
+}
+.servicos-interno{
+    padding: 1em 0 300px 0 !important;
+}

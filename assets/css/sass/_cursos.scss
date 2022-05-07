@@ -1,0 +1,40 @@
+/* ===== CURSOS ===== */
+.cursos{
+    padding: 1em 0 300px 0;
+    color: $acinzentado;
+    a{
+        color: $acinzentado;
+        &:hover{
+            color: darken($acinzentado,20%);
+        }
+    }
+    .titulo{
+        color: $verde;
+        padding: 1em 0;
+    }
+    .curso{
+        margin-bottom: 1em;  
+        .informacoes{
+            font-family: Oswald Bold;
+            .data{
+                margin: 0;
+                font-size: 14px;
+            }
+            .nome{
+                font-size: 22px;
+            }
+            .local{
+                font-size: 20px;
+                font-family: Oswald Light;
+            }
+            
+        }
+        .resumo{
+            p{
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+ /* ----- CURSOS INTERNO ----- */
+  // Mesmo CSS do Cursos

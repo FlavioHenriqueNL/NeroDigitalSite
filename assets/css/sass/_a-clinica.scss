@@ -1,0 +1,17 @@
+/* ===== A CLÍNICA ===== */
+.a_clinica{
+    padding: 1em 0 300px 0;
+    color: $acinzentado;
+    .titulo{
+        padding: 1em 0;
+    }
+    #clinica_imagem{
+        margin: 0;
+        img{
+            width: 35%;
+            margin: 0 1em 1em 0;
+        }
+       
+    }
+}
+   

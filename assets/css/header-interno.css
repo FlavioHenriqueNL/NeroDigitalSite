@@ -1,0 +1,38 @@
+  .header-interno {
+    background: white !important;
+    padding: 0 !important;
+  }
+  .header-interno .navbar a{
+    color: #47a491 !important;
+    font-size: 20px;
+  }
+  .header-interno .navbar-toggler {
+    background: #47a491 !important; 
+  }
+  .header-interno .navbar .a:hover {
+    color: #285d52 !important;
+  }
+  .header-interno .navbar .navbar-brand img {
+    filter: brightness(100%) grayscale(0%) !important;
+  }
+  .header-interno .redes-sociais span a {
+    color: #47a491 !important;
+  }
+  .header-interno .redes-sociais span a:hover {
+    color: #285d52 !important;
+  }
+  .header-interno .navbar-brand img {
+    width: 18vw;
+    min-width: 125px;
+  }
+  @media (max-width: 768px) {
+    .header-interno .navbar-brand img{
+      width: 30vw; 
+    } 
+  }
+  @media (max-width: 992px) {
+    .header-interno .desktop-lg {
+      display: none; 
+    }
+  }
+  

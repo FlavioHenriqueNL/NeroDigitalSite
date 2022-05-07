@@ -1,0 +1,93 @@
+/* ===== FOOTER ===== */
+footer{
+    background: black;
+    color: $branco;
+    padding: 1em 0;
+    h2{
+        font-family: Oswald Bold;
+        font-size: 30px;
+        margin-bottom: 1em;
+    }
+
+    .menu{
+        ul{
+            list-style: none;
+            margin: 1em 0;
+            li{
+                margin: 0.5em 0;
+                font-family: Oswald light;
+                font-size: 25px;
+                a{
+                    color: $branco;
+                    &:hover{
+                        color: darken($branco,20%);
+                    }
+                }
+            }
+            .current-menu-item{
+                a{
+                    color: darken(#fff,50%) !important;
+                }
+            }
+            @media(max-width: 768px){
+                text-align: center;
+            }
+        }
+    }
+
+    #footer-div{
+        border-left: 2px solid #707070;
+        border-right: 2px solid #707070;
+        @media (max-width: 768px){
+            border-left: none;
+            border-right: none;
+            border-top: 2px solid #707070;
+            border-bottom: 2px solid #707070;
+            margin: 1em 0;
+            
+        } 
+    }
+    .nossas-redes{
+        .facebook,.instagram{
+            background: $verde;
+            border-radius: 10px;
+            height: 80px;
+            margin-bottom: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;        
+           
+            &:hover{
+                background: darken($verde, 20%);
+            } 
+            
+            h3{
+                margin: 0;
+                color: $branco;
+            } 
+        }
+        @media (max-width: 768px) {
+            padding: 1em 0 !important;
+        } 
+    }
+
+    .fale-conosco{
+        /* CSS ESTÁ NO GLOBAL, CASO QUEIRA FAZER UMA MODIFICAÇÃO APENAS NO FOOTER, ADICIONAR AQUI. */
+    }
+
+    .conteudo{
+        .informacoes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .imagem{
+            display: flex;
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

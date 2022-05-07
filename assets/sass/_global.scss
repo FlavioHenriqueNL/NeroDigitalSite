@@ -1,0 +1,80 @@
+
+/* ===== GLOBAL ===== */
+a{
+    text-decoration: none !important;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+body{
+    font-family: Oswald Light;
+}
+.desktop{
+    display: block;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+.mobile{
+    display: none;
+    @media (max-width: 768px) {
+        display: block !important;
+    }
+}
+.titulo{
+    h1{
+        font-family: Oswald Bold;
+        font-size: 60px;
+        font-weight: bold;
+        font-style: normal;
+        color: $verde;
+    }
+  
+}
+.form-control,.btn-enviar,input[type="submit"]{
+    border-radius: 10px;
+    height: 45px;
+    font-family: Oswald light;
+    &::placeholder{
+        color: $verde !important;
+        font-size: 18px;
+        font-family: Oswald light;
+    }
+}
+textarea.form-control{
+    resize: no;
+    height: 100px;
+}
+.btn-enviar,input[type="submit"]{
+    background: $verde;
+    color: $branco;
+    border: none;
+    width: 60px;
+    cursor: pointer;
+    &:hover{
+        background: darken($verde,10%);
+    }
+    float: right;
+}
+#linha-unidade{
+    border: 10px solid #000;
+    width: 80%;
+    position: relative;
+    top: -25px;
+}
+.para_topo{
+    background: $verde;
+    color: $branco;
+    border-radius: 35px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all 0.2s linear;
+    img{
+        transform: rotate(180deg);
+    }
+}

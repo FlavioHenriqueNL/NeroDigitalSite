@@ -1,0 +1,419 @@
+@charset "UTF-8";
+/* ===== FONT-FACE ===== */
+@font-face {
+  font-family: Oswald Bold;
+  src: url(../media/fonts/Oswald-Bold.ttf); }
+
+@font-face {
+  font-family: Oswald Light;
+  src: url(../media/fonts/Oswald-Light.ttf); }
+
+/* ===== GLOBAL ===== */
+a {
+  text-decoration: none !important; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: Oswald Light; }
+
+.desktop {
+  display: block; }
+  @media (max-width: 768px) {
+    .desktop {
+      display: none; } }
+
+.mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .mobile {
+      display: block !important; } }
+
+.titulo h1 {
+  font-family: Oswald Bold;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: normal;
+  color: #47a491; }
+
+.form-control, .btn-enviar, input[type="submit"] {
+  border-radius: 10px;
+  height: 45px;
+  font-family: Oswald light; }
+  .form-control::placeholder, .btn-enviar::placeholder, input[type="submit"]::placeholder {
+    color: #47a491 !important;
+    font-size: 18px;
+    font-family: Oswald light; }
+
+textarea.form-control {
+  resize: no;
+  height: 100px; }
+
+.btn-enviar, input[type="submit"] {
+  background: #47a491;
+  color: #fff;
+  border: none;
+  width: 60px;
+  cursor: pointer;
+  float: right; }
+  .btn-enviar:hover, input[type="submit"]:hover {
+    background: #388072; }
+
+#linha-unidade {
+  border: 10px solid #000;
+  width: 80%;
+  position: relative;
+  top: -25px; }
+
+.para_topo {
+  background: #47a491;
+  color: #fff;
+  border-radius: 35px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.2s linear; }
+  .para_topo img {
+    transform: rotate(180deg); }
+
+header {
+  position: relative; }
+  header .barra-navegacao {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    z-index: 1; }
+    @media (max-width: 992px) {
+      header .barra-navegacao .container {
+        width: 100%;
+        max-width: none; } }
+    header .barra-navegacao .navbar-brand img {
+      width: 18vw;
+      min-width: 125px;
+      filter: brightness(500%) grayscale(200%); }
+      @media (max-width: 768px) {
+        header .barra-navegacao .navbar-brand img {
+          width: 30vw; } }
+    header .barra-navegacao .navbar-toggler {
+      background: #47a491 !important; }
+    header .barra-navegacao .redes-sociais {
+      font-size: 25px; }
+      header .barra-navegacao .redes-sociais a {
+        color: #fff; }
+        header .barra-navegacao .redes-sociais a:hover {
+          color: #cccccc; }
+    @media (max-width: 992px) {
+      header .barra-navegacao .desktop-lg {
+        display: none; } }
+  header .mae-menu {
+    justify-content: center; }
+    header .mae-menu ul {
+      justify-content: center;
+      display: flex;
+      margin: 1em 0 2em 0;
+      padding: 0;
+      list-style: none; }
+      header .mae-menu ul li {
+        text-align: center; }
+        header .mae-menu ul li a {
+          text-align: center;
+          text-decoration: none;
+          padding-right: .5rem !important;
+          padding-left: .5rem !important;
+          color: #fff !important;
+          font-size: 20px; }
+          @media(max-width: 1200px){
+            header .mae-menu ul li a{
+              font-size: 16px !important;
+            }
+          }
+        header .mae-menu ul li:hover a {
+          color: #cccccc !important; }
+    header .mae-menu .current-menu-item a {
+      color: #cccccc !important; }
+    @media (max-width: 768px) {
+      header .mae-menu ul {
+        flex-direction: column; } }
+  header header {
+    position: fixed;
+    /* fixa a div na tela, ou absolute caso tenha mais conteúdo */
+    top: 0;
+    left: 0;
+    z-index: 0;
+    /* cabada abaixo do elemento .media */
+    width: 100%;
+    height: 100%; }
+    header header .slide {
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      /* camada acima da div cover */
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      /* aqui está o segredo */ }
+    .slider{
+      overflow: hidden;
+    }
+
+/* ===== AREA DO DENTISTA ===== */
+#area-do-dentista {
+  background: black;
+  padding: 0.5em 0; }
+  #area-do-dentista .titulo {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px 0; }
+    #area-do-dentista .titulo h1 {
+      color: #fff;
+      font-size: 25px;
+      margin: 0; }
+  #area-do-dentista form .btn-enviar {
+    width: 25%; }
+  #area-do-dentista form .form-control {
+    margin-left: 5px; }
+  @media (max-width: 768px) {
+    #area-do-dentista form .btn-enviar {
+      width: 100%; }
+    #area-do-dentista form .form-control {
+      margin: 5px 0; } }
+  #area-do-dentista #seta:checked ~ .seta {
+    -webkit-transform: scale(1) rotate(180deg);
+    -moz-transform: scale(1) rotate(180deg);
+    -o-transform: scale(1) rotate(180deg);
+    transform: scale(1) rotate(180deg);
+    transition-duration: 0.5s; }
+  #area-do-dentista .seta {
+    transition-duration: 0.5s;
+    margin: 0;
+    cursor: pointer; }
+
+.corpo-clinico {
+  padding: 2em 0 1em 0; }
+  .corpo-clinico .clinico {
+    margin: 1em 0; }
+  .corpo-clinico .titulo {
+    color: #47a491;
+    text-align: center; }
+  .corpo-clinico .img-clinico {
+    display: flex;
+    justify-content: center; }
+    .corpo-clinico .img-clinico img {
+      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.16);
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 150px;
+      border: 10px solid transparent;
+      max-width: 255px;
+      max-height: 255px;
+      width: 100%;
+      height: 100%; }
+      .corpo-clinico .img-clinico img:hover {
+        border: 10px solid #47a491; }
+  .corpo-clinico .id-clinico {
+    color: #47a491;
+    text-align: center; }
+    .corpo-clinico .id-clinico h5 {
+      font-family: Oswald Bold;
+      font-size: 20px; }
+    .corpo-clinico .id-clinico h6 {
+      font-family: Oswald Light;
+      font-size: 16px; }
+  .corpo-clinico #conheca_clinicos {
+    color: #47a491;
+    font-size: 24px; }
+    .corpo-clinico #conheca_clinicos:hover {
+      color: #285d52; }
+
+/* ===== UNIDADES ===== */
+.unidades {
+  background: #47a491;
+  padding: 1em 0;
+  color: #fff; }
+  .unidades .titulo {
+    padding: 1em 0;
+    text-align: center; }
+    .unidades .titulo #unidades-titulo {
+      color: #fff; }
+    .unidades .titulo h3 {
+      font-family: Oswald Light;
+      font-size: 40px;
+      margin-bottom: 1em;
+      color: #fff; }
+      .unidades .titulo h3:hover {
+        color: #cccccc; }
+  .unidades .local {
+    padding: 2em 0; }
+    .unidades .local .informacao h1 {
+      border-bottom: 1px solid #fff;
+      font-size: 3vw;
+      padding: 0.5em 0; }
+    .unidades .local .informacao p {
+      margin: 3em 0; }
+  @media (max-width: 768px) {
+    .unidades .titulo h1 {
+      font-size: 45px; }
+    .unidades .titulo h3 {
+      display: none; }
+    .unidades .local {
+      padding: 0.5em 0; }
+      .unidades .local .informacao p {
+        font-size: 2vw;
+        margin: 0 !important; } }
+
+/* ===== SERVIÇOS ===== */
+.servicos .titulo {
+  color: #47a491;
+  padding: 0 0 2em 0;
+  text-align: center; }
+  .servicos .titulo a h2 {
+    color: #47a491; }
+    .servicos .titulo a h2:hover {
+      color: #285d52; }
+
+.servicos .linha-vertical {
+  height: 80%;
+  /*Altura da linha*/
+  border-right: 15px solid #000;
+  /* Adiciona borda esquerda na div como ser fosse uma linha.*/
+  position: absolute;
+  right: 8.5%;
+  top: 8.5%; }
+  @media (max-width: 1200px) {
+    .servicos .linha-vertical {
+      right: 2.5%; } }
+
+.servicos .lista-servicos h2 {
+  color: #47a491 !important;
+  font-size: 40px;
+  font-family: Oswald Bold;
+  padding-bottom: 0.5em; }
+
+.servicos .lista-servicos li {
+  font-size: 21px;
+  color: #919191 !important; }
+
+@media (max-width: 992px) {
+  .servicos .lista-servicos h2 {
+    font-size: 30px; }
+  .servicos .lista-servicos li {
+    font-size: 18px; } }
+
+/* ----- CORPO CLINICO INTERNO ----- */
+.corpo-clinico.interno {
+  color: #47a491; }
+  .corpo-clinico.interno .informacoes .nome {
+    font-family: Oswald Bold; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: black;
+  color: #fff;
+  padding: 1em 0; }
+  footer h2 {
+    font-family: Oswald Bold;
+    font-size: 30px;
+    margin-bottom: 1em; }
+  footer .menu ul {
+    list-style: none;
+    margin: 1em 0; }
+    footer .menu ul li {
+      margin: 0.5em 0;
+      font-family: Oswald light;
+      font-size: 25px; }
+      footer .menu ul li a {
+        color: #fff; }
+        footer .menu ul li a:hover {
+          color: #cccccc; }
+    footer .menu ul .current-menu-item a {
+      color: gray !important; }
+    @media (max-width: 768px) {
+      footer .menu ul {
+        text-align: center; } }
+  footer #footer-div {
+    border-left: 2px solid #707070;
+    border-right: 2px solid #707070; }
+    @media (max-width: 768px) {
+      footer #footer-div {
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid #707070;
+        border-bottom: 2px solid #707070;
+        margin: 1em 0; } }
+  footer .nossas-redes .facebook, footer .nossas-redes .instagram {
+    background: #47a491;
+    border-radius: 10px;
+    height: 80px;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; }
+    footer .nossas-redes .facebook, footer .nossas-redes .instagram a{
+      color: #fff;
+    }
+    footer .nossas-redes .facebook:hover, footer .nossas-redes .instagram:hover {
+      background: #285d52; }
+    footer .nossas-redes .facebook h3, footer .nossas-redes .instagram h3 {
+      margin: 0;
+      color: #fff; }
+  @media (max-width: 768px) {
+    footer .nossas-redes {
+      padding: 1em 0 !important; } }
+  footer .fale-conosco {
+    /* CSS ESTÁ NO GLOBAL, CASO QUEIRA FAZER UMA MODIFICAÇÃO APENAS NO FOOTER, ADICIONAR AQUI. */ }
+  footer .conteudo .informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  footer .conteudo .imagem {
+    display: flex; }
+  footer .conteudo .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+/* ===== CURSOS ===== */
+.cursos {
+  color: #919191;
+  padding-bottom: 1em; }
+  .cursos a {
+    color: #919191; }
+    .cursos a:hover {
+      color: #5e5e5e; }
+  .cursos .titulo {
+    color: #47a491;
+    padding: 1em 0; }
+  .cursos .curso {
+    margin-bottom: 1em; }
+    .cursos .curso .informacoes .data {
+      margin: 0; }
+    .cursos .curso .informacoes .data, .cursos .curso .informacoes .nome {
+      font-family: Oswald Bold; }
+    .cursos .curso .resumo p {
+      word-wrap: break-word; }
+
+/* ----- CURSOS INTERNO ----- */
+/* ===== CONTATO ===== */
+.contato {
+  padding: 1em 0; }
+  .contato .titulo {
+    margin: 1em 0 2em 0; }
+  .contato .form-control {
+    background: #f2f2f2; }
+
+/* ===== A CLÍNICA ===== */
+.a_clinica {
+  color: #919191; }
+  .a_clinica .titulo {
+    padding: 1em 0; }
+  .a_clinica #clinica_imagem {
+    margin: 0; }
+    .a_clinica #clinica_imagem img {
+      width: 35%;
+      margin: 0 1em 1em 0; }

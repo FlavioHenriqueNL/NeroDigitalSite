@@ -1,0 +1,57 @@
+/* ===== UNIDADES ===== */
+.unidades{
+    background: $verde;
+    padding: 1em 0;
+    color: $branco;
+    .titulo{
+        padding: 1em 0;
+        text-align: center;
+        #unidades-titulo{
+            color: $branco;
+        }
+        h3{
+            font-family: Oswald Light;
+            font-size: 40px;
+            margin-bottom: 1em;
+            color: $branco;
+            &:hover{
+                color: darken($branco,20%);
+            }
+        }
+    }
+    .local{
+        padding: 2em 0;
+        .informacao{
+            h1{
+                border-bottom: 1px solid $branco;
+                font-size: 3vw;
+                padding: 0.5em 0;
+            }
+            p{
+                margin: 3em 0;
+            }
+        }
+    }
+    @media(max-width: 768px){
+        .titulo{
+            h1{
+                font-size: 45px;
+            }
+            h3{
+                display: none;
+            }
+            
+        }
+        .local{
+            padding: 0.5em 0;
+            .informacao{
+                p{
+                    font-size: 2vw;
+                    margin: 0 !important;
+                }
+            }
+        }
+        
+
+    }
+}

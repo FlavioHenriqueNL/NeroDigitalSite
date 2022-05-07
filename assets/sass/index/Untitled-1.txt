@@ -1,0 +1,26 @@
+.services-list li .service-icon:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    top: 50%;
+    left: 50%;
+    background: #dd3333;
+}
+
+.services-list li .service-icon {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+}
